@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block myscripts %}
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"/> -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.27/dc.min.css"/>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+      <h2>
+        Takeaways
+      </h2>
+      <p>
+        </p>
+    </div>
+    <div class="row">
+      <div class="col-4 col-sm-6 col-md-12">
+          <h3>Why did we choose this problem?</h3>
+          <p> Our team wanted to see if there was any impact on food insecurity due to COVID-19. We are aware that food insecurity is a significant issue in the US and around the world. However, the team also believes that there is not enough effort in working to improve this problem, so we decided to focus our project in trying to shine a light on food insecurity in the US and the different factors that affect it. 
+          </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 col-sm-6 col-md-12">
+          <h3>Our Complications</h3>
+          <p>Initially, the team wanted to see if there was a correlation between availability of food banks and COVID-19 deaths. As we began researching, we quickly came to discover the lack of data there is about food insecurity and food banks themselves. This drove our project into many obstacles as we could not find the necessary data to answer our question. We eventually found data specific to King County in Seattle, WA and the greater Boston area. However, when we ran our linear regression of food insecurity vs. COVID-19 death rates, there was not very much to learn since the correlation was so weak. This lead us to dig a little deeper and start to look for other factors that could affect food insecurity rates and food bank availability in the US. Again, we struggled to gather the data needed, but we were successful in the end. 
+          </p>
+          <img src="static/images/linear_regression_covid.png" style="width:350px;height:300px;" class="center"/>
+          <p> Our main struggle of not being able to find data greatly speaks to the lack of attention that the issue of food insecurity gets. Even through the frustration of not having data to work with, our team kept getting more motivated to open up this discussion and analysis of the importance of food banks and the ways to fight against food insecurity. 
+          </p>
+        </div>
+        </div>
+              <!-- <form action="/tweepy_search">
+                  What term would you like to search for? <input type='text' name='search_term'><br><br>
+              <button type = "submit"><img src="https://img.icons8.com/ios/50/000000/google-web-search.png"/></button><br>
+              </form> -->
+
+  <div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+        <h3>The Implications of What We Found</h3>
+        <p> Each of our graphs postulated that food insecurity decreased the further away the county was from the nearest food bank. Graphs with a steep slope and a strong correlation such as the Percent of adults with a Bachelor’s degree vs Food Bank show that there is a greater chance of finding a food bank in counties with more college educated adults. Additionally, our interaction model shows that there is a higher likelihood of food insecurity in counties with a food bank and with more bachelor or higher degree holders. It may seem that the results show that food banks are not making an impact in food insecurity, however if you consider that food banks tend to be located in cities this can explain the seemingly contradictory results of counties with food banks.
+            Larger cities and urban areas tend to have more college educated individuals and more inequality as well. Large cities tend to have more degree holders and also a higher cost of living. This means that college educated adults may be more able to afford housing and have higher income, but an individual with a lower income may not be able to afford the same housing they could have in a lower cost of living city and thus would have to choose where to allocate their resources. Money may go to paying rent instead of food leading to more food insecure individuals with access to a food bank even though many others in the population may be much more financially stable. 
+
+         </p>
+    </div>
+  </div>
+
+ <div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+      <h3> Next Steps</h3>
+        <p>
+            If time permitted we would like to take a closer look into counties that have food banks and more urban areas. It would be helpful to create an even more detailed breakdown of the population in these urban areas. We would like to choose some counties with large cities and look into the income inequality comparison to counties without a large city. This could indicate that there was greater need to begin with and the food banks may not be enough to completely reduce food inequality in urban areas. Another idea for a project to further study the impact of food banks would be to study how food insecurity changes the further you get away from a food bank within a particular low income neighborhood in a large city. This could show a more relevant breakdown of food insecurity among areas where people need access to food most and how other factors such as transportation can affect access to food banks and food insecurity.
+      </p>
+      <p> In terms of analysis, we would want have wanted to explore more than the linear probability model. Linear probability models are a good first step and are easy to interpret, but to get a more comprehensive model, we would have wanted to use a logistic model. </p>
+    </div>
+  </div>
+
+ <div class="row">
+  <div class="col-4 col-sm-6 col-md-12">
+    <h3> Final Thoughts </h3>
+      <p> We started our project exploring the relationship between food insecurity and food banks and how COVID has impacted food insecurity. After devising methods to explore this relationship we have realized the large number of factors that affect food insecurity and while food banks may help reduce food insecurity there is still a lot of research that needs to be done on how best to utilize food banks and how to reduce the rate of food insecurity.  Our research for this project highlighted the lack of information on food banks and many other factors that lead to food insecurity. Though our data at first glance suggests that food banks do not have a significant impact of food insecurity when we look closer at the areas where food banks are located we are likely to see other forms of inequality. We hope that there is further research into food banks and food inequality to tackle the serious impact of food insecurity so that more people have access to a basic human need.
+    </p>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+  <!-- <script type="text/javascript" src="js/d3.js"></script> -->
+  <!-- <script type="text/javascript" src="js/crossfilter.js"></script> -->
+  <!-- <script type="text/javascript" src="js/dc.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter2/1.5.2/crossfilter.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/dc@4/dist/dc.js"></script>
+  <!-- <script type="text/css" src="https://unpkg.com/dc@4/dist/style/dc.css"></script> -->
+  <script src="https://unpkg.com/currency.js@~1.2.0/dist/currency.min.js"></script>
+  <script type="text/javascript" src="/static/scripts/gss_financials.js"></script>
+{% endblock %}

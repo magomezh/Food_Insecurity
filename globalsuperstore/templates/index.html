@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+
+{% block myscripts %}
+<script src="//d3js.org/d3.v3.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="/static/content/site.css" /> -->
+<link rel="stylesheet" type="text/css" href="/static/content/sequences.css" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="jumbotron" id="headertext">
+    <h1>Insight into Food Insecurity</h1>
+    <p class="lead">Explore our analysis of food insecurity</p>
+    <p class="lead">Our team explored the impact of food insecurity in the United States and how food banks impact food inequality among various demographic groups.   We analyzed food insecurity rates pre and post COVID to determine COVID's effect on communities in the U.S. Our analysis lead us to determine if food bank resources are allocated well and, if not, decide what actions could be taken.
+
+    </p>
+    <p><a href="/about" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<div class="row" id="tbl">
+    <div class="col-md-4" id="fpcol">
+        <a href="/visualizations"><img id="fpimage" src="https://i.ya-webdesign.com/images/graph-icon-png-8.png"/>
+        <h2 id="test">Visualizations</h2>
+        <p id="test1">
+            Explore data visualizations for insights into food insecurity in the US.
+        </p></a>
+        <!--<p><a class="btn btn-default" href="http://flask.pocoo.org/docs/">Learn more &raquo;</a></p>-->
+    </div>
+    <div class="col-md-4" id="fpcol">
+        <a href="/analysis"><img id="fpimage" 
+        src="https://cdn0.iconfinder.com/data/icons/data-science-2-3/66/92-512.png"/>"
+            
+        <h2 id="test">Explore Linear Regression and Forecasting</h2>
+        <p id="test1">Data analysis through linear regression models and their implications.</p></a>
+        <!--<p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>-->
+    </div>
+    <div class="col-md-4" id="fpcol">
+        <a href="/takeaways"><img id="fpimage" src="static/images/insight.png"/>
+        <h2 id="test">Final Insights</h2>
+        <p id="test1">Quick takeaways of our project.</p></a>
+        <!--<p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>-->
+    </div>
+</div>
+
+</br>
+<div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+        <h2>Methodology</h2>
+        <p/ align="justify"> Our research explores if the presence or distance to a food bank is a predictor of food insecurity on the county level. We began our analysis by retrieving food bank location (web-scraping) and food insecurity rate data (by online request) from the nonprofit organization Feeding America. Two data frames were created to store the datasets received, in which one contained foodbank county location data and another food insecurity rates.</p>
+        
+        <p/ align="justify"> Our foodbank location data frame only included zip codes, so we had to find the corresponding FIPS (unique county identifier) to each zip code to merge with the food insecurity data frame. Once both data frames joined, we enriched our dataset by ingesting distance between counties data, provided by the National Bureau of Economic Research. Next, our final data frame was created to support our geo-temporal analysis and to contain extra features such as unemployment rate, household income, poverty rate, and education.</p>
+        
+    </div>
+</div>
+
+<img src="../static/images/merge.png" id="storedata">
+
+<!--<div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+        <h3>First Impressions</h3>
+        <p>As true data scientists, we embarked on understanding and analyzing the data with a range of 
+            visualization tools at our disposal.  Rendering 2018 and 2020 food insecurity data over a map we were able to see how the COVID-19 pandemic has affected food insecurity in the US.</p>
+    </div>
+</div>
+
+
+
+<div class='tableauPlaceholder' id='viz1589375903416' style='position: relative'><noscript><a href='#'><img alt=' '
+    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProfitSalesMap&#47;ProfitSalesMap&#47;1_rss.png'
+    style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+<param name='embed_code_version' value='3' />
+<param name='site_root' value='' />
+<param name='name' value='ProfitSalesMap&#47;ProfitSalesMap' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+<param name='static_image'
+value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProfitSalesMap&#47;ProfitSalesMap&#47;1.png' />
+<param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='filter' value='publish=yes' /></object></div>
+<script
+type='text/javascript'>                    
+var divElement = document.getElementById('viz1589375903416'); 
+var vizElement = divElement.getElementsByTagName('object')[0]; 
+vizElement.style.width = '100%'; 
+vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; 
+scriptElement = document.createElement('script'); 
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+
+<div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+        <h3>Product Portfolio</h3>
+        <p>We took the retail business' latest year financial data to understand their product portfolio, market penetration and sales performance.
+            The sequences sunburst chart below presents our findings that is intuitive to read.</p>
+        <!-- <p><br></p> -->
+       <!-- <p>We learn that the business has products ranging from Phones, Copiers, Bookcases to Binders, Paper and Labels.
+            These products are managed through three main categories - Technology, Furniture and Office Supplies.
+            Notice that while the Asia Pacific market (orange segment in third ring) seems to be an important market with most Sales, the Western Europe region
+            (light purple segment in outer ring) has a larger share of sales across all product categories.</p>
+    </div>
+</div>-->
+
+<div class="row">
+   <!-- <div class="col-4 col-sm-6 col-md-12 col-xs-12 center">
+        <div id="main">
+            <div id="sequence"></div>
+            <div id="chart">
+                <div id="explanation" style="visibility: hidden;">
+                    <h2>Sales:</h2>
+                    <span id="percentage"></span><br />
+                </div>
+            </div>
+        </div>
+        <center><p><em>Hover mouse over different segments of the chart</em></p></center>
+    </div>-->
+</div>
+
+<div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+       <!-- <h3>About the Chart</h3>
+        <p>A <a href="https://www.data-to-viz.com/graph/sunburst.html" target="_blank">sunburst diagram</a> displays a hierarchical structure. The origin of 
+             the organization is represented by the center of the circle, and each level of the organization by an aditional ring. The last level (leaves) 
+             are located at the extreme outer part of the circle.  It is very similar to a <a href="https://www.data-to-viz.com/graph/treemap.html" target="_blank">treemap</a>,
+             except it uses a <code>radial layout</code>.</p>
+        <p>This particular rendering of the sequence sunburst is courtesy <a href="https://bl.ocks.org/kerryrodden/7090426" target="_blank">Kerry Rodden</a>.</p>
+    </div>-->
+</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter2/1.5.2/crossfilter.js"></script>
+<script type="text/javascript" src="https://unpkg.com/dc@4/dist/dc.js"></script>
+<script type="text/css" src="https://unpkg.com/dc@4/dist/style/dc.css"></script> -->
+<script src="https://unpkg.com/currency.js@~1.2.0/dist/currency.min.js"></script>
+<script type="text/javascript" src="/static/scripts/sequences.js"></script>
+
+<script type="text/javascript">
+    // Hack to make this example display correctly in an iframe on bl.ocks.org
+    d3.select(self.frameElement).style("height", "700px");
+</script>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block myscripts %}
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"/> -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.27/dc.min.css"/>
+{% endblock %}
+
+{% block content %}
+<!-- <h2>{{ title }}.</h2> -->
+<!-- <h3>{{ message }}</h3> -->
+
+<div class="container">
+    <div class="jumbotron">
+      <h2>
+        Data Visualization
+        <!-- <span id="report-date" style="float: right;">2019</span> -->
+      </h2>
+      <p></p>
+    </div>
+
+    <div class="row">
+      <div class="col-4 col-sm-6 col-md-12">
+          <h3>Boston Heat Map</h3>
+          <p> We created a heat map that would viasualize the number of foodbanks in the Greater Boston Area in comparison to the population. As the colors in the map get warmer, this indicates that the population is larger. There are also bubbles included in the map which symbolize the number of foodbanks around a certain area. When any of the bubbles are clicked, the pins will materialize showing the exact location. </p>
+          <p> Our heat map proves how areas with more population tend to have a higher number of food banks, seen as those areas with warmer colors have bubbles with greater numbers. Initially our plan was for the heat to symbolize the number of COVID-19 deaths in each area, in order to analyse whether those areas with a higher number of covid deaths also had a high number of food banks. However, due to lack of accessibility to data, we decided to go with the current heat map of population seen below. </p>
+      </div>
+    <iframe src="map"  width="1000" height="500" title="Boston Heat Map" class="center"></iframe>
+    </div>
+
+    <!-- {% include "map.html" %} -->
+
+  
+  <div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+        <h3>Food Insecurity in the USA - A Visualization</h3>
+        <p>Our data scientists have put together a multidimensional, animated and interactive visualization of food insecurity in the United States.
+            These interactive dashboard will help viewers look for patterns and gain insights that they propably wouldn't have known before.  
+            Our visualization contains large bubbles that show counties with foodbanks within 100 miles, while smaller ones do not have foodbanks within a 100 mile radius. The range of color of the bubbles symbolizes the food insecurity rate. </p>
+
+        <p> This is a very powerful visualization that will expose trends previously unknown. One can choose to only see the larger bubbles or the smaller bubbles. Also, by selecting a specific bubble more detailed information shows about it. This includes the point's FIPS code, whether they have a foodbank within 100 miles or not (0 or 1) and there particular food insecurity rate. 
+        </p>
+        <p> Here are some quick observations:
+          <ul>
+            <li>The East of the US has more foodbanks while the Mountain states seem to have the least amount of foodbanks.</li>
+            <li>The Southeast has a lower food insecurity rate overall, as most points are darker colors, while the Northeast has the most red points showing higher food insecurity rates. </li>
+          </ul>
+        </p>
+        <p> Play with the Tableau Dashboard. Hover over the bubbles to see more information about each county.</p>
+    </div>
+  </div>
+  <div class='tableauPlaceholder' id='viz1612826218926' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C2&#47;C2C_16120509496550&#47;CountyData2018-2019&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='C2C_16120509496550&#47;CountyData2018-2019' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C2&#47;C2C_16120509496550&#47;CountyData2018-2019&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1612826218926');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+      <!-- <script type="text/javascript" src="js/d3.js"></script> -->
+      <!-- <script type="text/javascript" src="js/crossfilter.js"></script> -->
+      <!-- <script type="text/javascript" src="js/dc.js"></script> -->
+      
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter2/1.5.2/crossfilter.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/dc@4/dist/dc.js"></script>
+      <!-- <script type="text/css" src="https://unpkg.com/dc@4/dist/style/dc.css"></script> -->
+      <script src="https://unpkg.com/currency.js@~1.2.0/dist/currency.min.js"></script>
+    
+      <script type="text/javascript" src="/static/scripts/gss_financials.js"></script>
+{% endblock %}

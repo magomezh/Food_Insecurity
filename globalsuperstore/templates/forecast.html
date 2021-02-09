@@ -1,0 +1,93 @@
+{% extends "layout.html" %} {% block myscripts %}
+<!-- <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.27/dc.min.css"/>
+{% endblock %} {% block content %}
+<div class="container">
+    <div class="jumbotron">
+      <h2>
+        Analysis
+      </h2>
+      <p></p>
+</div>
+
+
+</head>
+
+<div class="row">
+    <div class="col-4 col-sm-6 col-md-12">
+
+<div style="width: 100%; overflow: hidden;" class="davis_text">
+    <h3> Linear Regression Model </h3>
+
+    <p> Linear regression is used to model the relationship between a scalar variable and one or more explanatory variables by fitting a linear equation. We are using a simple linear regression to model the food insecurity rate change from 2018 to 2020 as a function of distance to the nearest food bank in miles in United States counties. Our scalar variable is distance and our explanatory variable is food insecurity. If a food bank exists in a county, the distance would be 0. In this simple regression problem, we are looking at a model: <br> &emsp; &emsp;  y = B<sub>0</sub> + B<sub>1</sub>*x.
+        <br> </p>
+    <img src="static/images/linear_regression.png" style="width:500px;height:300px;" class="center"/>
+    
+    <p>  The slightly downward slope of our line indicates there is a negative correlation between food insecurity rate change and distance to the nearest food bank. So, we would expect to see less food insecurity in areas further away from a single food bank. The coefficients we extracted from this model are: <br> &emsp; &emsp;  B<sub>0</sub> = 30.73083653626483 <br> &emsp; &emsp;  B<sub>1</sub> = -0.14210314 <br> As B<sub>1</sub> is close to 0, we cannot conclude a strict correlation from linear regression, so we began to look at different models. 
+          </p>
+    <h3> Linear Probability Models </h3>
+    <p> Linear probability models are a special case of linear regression models, but with a binary dependent variable. We are interested in estimating the outcome of a variable that can take on two possible values. In this case, our dependent variable is if a county contains a food bank. We decided to use this model to interpret the county demographic data we obtained: poverty rate, unemployment rate, and education. So we want to see how the demographic of a county affects the probability that a county contains a food bank. </p>
+    <figure>
+        <img src="static/images/linear_probability_poverty.png" style="width:500px;height:300px;"/>
+        
+        <img src="static/images/linear_probability_umemployment.png" style="width:500px;height:300px;"/>
+        
+        <p> We first modeled the probability of having a food bank with poverty and unemployment rate in 2019. The coefficients obtained for the poverty model are: <br> &emsp; &emsp;   B<sub>0</sub>: 0.13786498304023248 <br> &emsp; &emsp;   B<sub>1</sub>: -0.00267764 <br> The coefficients obtained for the unemployment model are: <br> &emsp; &emsp;   B<sub>0</sub>: 0.09326605513139503 <br> &emsp; &emsp;   B<sub>1</sub>: -0.00224568 <br> The downward slope of the line shows there is a negative correlation, which suggests that the further away a county is from a food bank, the higher the poverty/unemployment rate, but the coefficients are so low that there is not a strong correlation.
+          </p>
+    </figure>
+    <figure>
+        <img src="static/images/linear_probability_less_than_hs.png" style="width:500px;height:300px;"/> 
+        
+        <img src="static/images/linear_probability_hs_only.png" style="width:500px;height:300px;"/>
+
+    </figure>
+    <figure>
+        <img src="static/images/linear_probability_associates.png" style="width:500px;height:300px;"/>
+        
+        <img src="static/images/linear_probability_bachelors.png" style="width:500px;height:300px;"/>
+           <p> We then modeled the probability of having a food bank with our variables for education: looking at the percentage of adults with less than a high school diploma, percentage of adults with a high school diploma only, percentage of adults with an associate's or college degree, and percentage of adults with a bachelor's degree or higher.  The coefficients obtained for the percentage of adults with less than a high school diploma model are: <br> &emsp; &emsp;  B<sub>0</sub>: 0.1332009633830952 <br> &emsp; &emsp;  B<sub>1</sub>: -0.00363783 <br> The coefficients obtained for the percentage of adults with a high school diploma only model are: <br> &emsp; &emsp;  B<sub>0</sub>: 0.45453011022217615 <br> &emsp; &emsp;  B<sub>1</sub>: -0.01079596 <br> The coefficients obtained for the percentage of adults with an associate's or college degree model are: <br> &emsp; &emsp;  B<sub>0</sub>: 0.1355588320672214 <br> &emsp; &emsp;  B<sub>1</sub>: -0.00166693 <br> The coefficients obtained for the percentage of adults with a bachelor's degree or higher only model are: <br> &emsp; &emsp;  B<sub>0</sub>: -0.09738444236960447 <br> &emsp; &emsp; B<sub>1</sub>: 0.00842924 <br>  The downward slope of the line shows there is a negative correlation for three of the education categories, but the coefficients are so low that there is not a strong correlation. The interesting point here is that counties with a higher percentage of people with bachelor's degree or higher have a higher probability of having a food bank within the county or nearby. 
+          </p>
+    </figure>
+    <h3> Interaction Model </h3>
+    <p> After looking at the linear probability models, we decided to add another variable to our linear regression model -- education. We took the median of the percentage of people with a bachelor's degree or higher and then assigned a binary variable to all the counties, higher than the medium percentage of people with a bachelor's degree or higher and lower than the medium percentage of people with a bachelor's degree or higher. In this more complex linear regression model, we are looking to model this: <br> &emsp; &emsp; y = B<sub>0</sub> + B<sub>1</sub>*x + B<sub>2</sub>*y + B<sub>3</sub>*x*y.
+        <br> </p>
+    <figure>
+    <img src="static/images/linear_regression_more_less_college.png" style="width:550px;height:500px;" />
+        
+    <img src="static/images/output.png" /> 
+    </figure>
+    <p> 
+Counties with more college graduates (people who received a Bachelor’s degree or higher) tended to have a lower food insecurity change before and during COVID the further away they were from a food bank. </p>
+<p> Counties with less college graduates (people who received an Associates degree, a high school diploma, or less than a high school diploma) tended to see less of a change in food insecurity from before and during COVID the further away they were from a food bank. </p>
+        <p> The difference in slope between counties with more college and less college suggests that food banks have less of an impact in counties with less college graduates since the slope is less pronounced. 
+          </p>
+     <p> Our regression results show how factors such as distance to the nearest food bank and college education affect food insecurity.  <br>
+&emsp; &emsp; The const coefficient (B<sub>0</sub>) is the food insecurity of a county with a food bank. <br> 
+&emsp; &emsp;  The more_college coefficient (B<sub>2</sub>) is the amount that food insecurity increases with communities with more college educated ppl with a food bank. The positive coefficient suggests there is a strong chance of having a higher rate of food insecurity in counties that have food banks and a higher rate of college educated adults. <br>
+&emsp; &emsp;  The Dist_nearest_county_FB coefficient (B<sub>1</sub>) shows the rate of food insecurity change per mile for counties that do not have a food bank. The negative coefficient postulates that there is a slightly lower chance of having food insecurity the further you are from a food bank.<br>
+&emsp; &emsp;  The dist*more_college coefficient (B<sub>2</sub>) shows the rate of food insecurity change per mile for counties that do not have a food bank and have more college educated adults. The negative coefficient postulates that there is a slightly lower chance of having food insecurity the further you are from a food bank even in counties with higher college graduates. <br>
+Our results indicate that while college education is a significant factor in predicting food insecurity, the distance to the nearest food bank in counties without food banks is not a significant predictor of food insecurity.
+
+</p>     
+
+</div>
+​</div>
+</div>
+
+
+
+
+
+    {% endblock %} {% block scripts %}
+    <!-- <script src="/static/scripts/forecastfunctions.js"></script> -->
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter2/1.5.2/crossfilter.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/dc@4/dist/dc.js"></script>
+      <!-- <script type="text/css" src="https://unpkg.com/dc@4/dist/style/dc.css"></script> -->
+      <script src="https://unpkg.com/currency.js@~1.2.0/dist/currency.min.js"></script>
+    
+      <script type="text/javascript" src="/static/scripts/gss_financials.js"></script>
+    {% endblock %}
