@@ -18,6 +18,7 @@ ___
 
 The project sought to understand how well distributed Food Bank networks were in the US. 
 ​
+
 The focus or aim of the project was to answer the question: 
 On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?
 
