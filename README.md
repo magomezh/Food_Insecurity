@@ -16,9 +16,10 @@ COVID-19 has highlighted the necessity for food banks in many communities in Ame
 ## Purpose
 ___
 
-The project sought to understand how well distributed the network of food banks is in the US. 
+The project sought to understand how well distributed Food Bank networks were in the US. 
 ​
-The aim of the project was to answer the question: On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?
+The focus or aim of the project was to answer the question: 
+On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?
 
 ## Tools Used
 ---
