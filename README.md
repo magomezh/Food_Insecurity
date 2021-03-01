@@ -1,6 +1,6 @@
 > # On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?
 
-![InstacartShopper](Images/C2C_Food_Insecurity.png)
+![Food Insecurity](Images/C2C_Food_Insecurity.png)
 
 ## Background
 ___
