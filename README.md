@@ -1,7 +1,7 @@
 # c2c-team39
 # On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?
 
-![InstacartShopper](Images/Instacart_Shopper.png)
+![InstacartShopper](Images/C2C_Food_Insecurity.png)
 
 ## Background
 ___
@@ -24,15 +24,8 @@ The aim of the project was to answer the question: On the U.S. County Level, is 
 ## Tools Used
 ---
 
-Machine Learning - Python (Mlxtend Library to import Apriori and Association Rules).
 
-Visualizations - Tableau, Matlplotlib, Seaborn, Networkx
-
-Data Manipulation - D3.js, JSON
-
-Web - HTML, CSS, Flask, JavaScript, Heroku
-
-## Data Source
+## Data Sources
 ---
 
 | Data          | Year          | Source        | Date Retrieved | 
