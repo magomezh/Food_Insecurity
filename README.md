@@ -29,7 +29,7 @@ On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecur
 ## Data Sources
 ---
 
-| Data          | Year          | Source        | Date Retrieved | 
+| Dataset          | Year          | Source        | Date Retrieved | 
 | ------------- | ------------- | ------------- | -------------  | 
 | [Food Insecurity Rate](https://www.feedingamerica.org/research/coronavirus-hunger-research)  | 2018-2020  | Feeding America – ​The Impact of Coronavirus on Food Insecurity​, Map the Meal Gap (October, 2020). |December 8, 2020  | 
 | [FIPS Codes Dataset](https://www2.census.gov/geo/docs/reference/codes/files/national_county.txt)  | 2010  | Data.world retrieved from the U.S. Government Census (2010). | January 20, 2021 | 
