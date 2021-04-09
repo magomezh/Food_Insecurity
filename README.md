@@ -1,4 +1,4 @@
-> # On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?
+> # **On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?**
 
 ![Food Insecurity](Images/C2C_Food_Insecurity.png)
 
@@ -20,7 +20,7 @@ The project sought to understand how well distributed Food Bank networks were in
 ​
 
 The focus or aim of the project was to answer the question:
- 
+
 ***On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?***
 
 ## Tools Used
@@ -41,3 +41,19 @@ The focus or aim of the project was to answer the question:
 | [Food Bank Locations](https://www.feedingamerica.org/find-your-local-foodbank) | Current  | Feeding America Organization | January 19, 2021 | 
 | [County Demographics](https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/)  | 2019  | U.S. Department of Agriculture – Economic Research Service (USDA)  | December 12, 2020 | 
 | [County Distance Dataset (100 miles)](https://www.nber.org/research/data/county-distance-database) | 2010  | National Bureau of Economic Research (NBER)  | January 18, 2021 | 
+
+## Findings
+___
+
+> ### Distance to Food Banks is not a Predictor for Food Insecurity.
+
+<table>
+  <tr>
+    <td>Boston Heatmap</td>
+     <td>Relative Frequency</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="Images/Boston_heatmap.png"></td>
+    <td valign="top"><img src="Images/Product_relative_freq.png"></td>
+  </tr>
+ </table>
