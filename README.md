@@ -141,8 +141,8 @@ After looking at the linear probability models, we decided to add another variab
 ## Findings
 ___
 
-> ### Our results indicate that while college education is a significant factor in predicting food insecurity, the distance to the nearest food bank in counties without food banks is not a significant predictor of food insecurity.
+### Our results indicate that while college education is a significant factor in predicting food insecurity, the distance to the nearest food bank in counties without food banks is not a significant predictor of food insecurity.
 
-> ### Distance to Food Banks is not a predictor of Food Insecurity on the County level. 
+### Distance to Food Banks is not a predictor of Food Insecurity on the County level. 
 
 
