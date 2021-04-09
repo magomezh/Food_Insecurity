@@ -45,11 +45,11 @@ The focus or aim of the project was to answer the question:
 ## Findings
 ___
 
-> ### Areas with higher population tend to have a higher number of food banks.
+> ### Boston Heatmap
 
 <table>
   <tr>
-    <td>Boston Heatmap</td>
+    <td>Areas with higher population tend to have a higher number of food banks.</td>
   </tr>
   <tr>
     <td valign="top"><img src="Images/Boston_heatmap.png"></td>
