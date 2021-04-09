@@ -95,6 +95,6 @@ We decided to use Linear Probability models to interpret the county demographic 
   </tr>
   <tr>
     <td valign="top"><img src="Images/linear_probability_poverty.png"></td>
-    <td valign="top"><img src="Images/linear_probability_unemployment.png"></td>
+    <td valign="top"><img src="Images/linear_probability_umemployment.png"></td>
   </tr>
  </table>
