@@ -49,7 +49,7 @@ ___
 
 <table>
   <tr>
-    <td>Areas with higher population tend to have a higher number of food banks.</td>
+    <td>Areas with a higher population tend to have a higher number of food banks.</td>
   </tr>
   <tr>
     <td valign="top"><img src="Images/Boston_heatmap.png"></td>
@@ -58,17 +58,19 @@ ___
 
  > ### Food Insecurity in the USA - Interactive Visualization
 
-The visualizations contain large bubbles that show counties with foodbanks within 100 miles, while smaller ones do not have foodbanks within a 100 mile radius. The range of color of the bubbles symbolizes the variables (Food Insecurity, Poverty Rate, Education Rate) 
+The visualizations contain large bubbles that show counties with foodbanks within a 100 mile radius, while the smaller bubbles do not have foodbanks within a 100 mile radius. 
+
+The range of color of the bubbles symbolizes the variables (Food Insecurity, Poverty Rate, Education Rate) 
 
 
 <table>
   <tr>
-    <td>Food insecurity</td>
+    <td>Food Insecurity</td>
     <td>Poverty Rate</td>
     <td>Education Level</td>
   </tr>
   <tr>
-    <td valign="top"><img src="Images/product_support.png"></td>
+    <td valign="top"><img src="Images/Food_Insecurity.png"></td>
     <td valign="top"><img src="Images/product_lift.png"></td>
     <td valign="top"><img src="Images/product_confidence.png"></td>
   </tr>
