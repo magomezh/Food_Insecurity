@@ -122,3 +122,18 @@ We decided to use Linear Probability models to interpret the county demographic 
  </table>
 
  The downward slope of the line shows there is a negative correlation for three of the education categories, but the coefficients are so low that there is not a strong correlation. The interesting point here is that counties with a higher percentage of people with bachelor's degree or higher have a higher probability of having a food bank within the county or nearby.
+
+  > ### Interaction Model
+
+After looking at the linear probability models, we decided to add another variable to our linear regression model -- education. We took the median of the percentage of people with a bachelor's degree or higher and then assigned a binary variable to all the counties, higher than the medium percentage of people with a bachelor's degree or higher and lower than the medium percentage of people with a bachelor's degree or higher.
+
+<table>
+  <tr>
+    <td>Interaction Model</td>
+    <td>OLS Regression Results</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="Images/linear_regression_more_less_college.png"></td>
+    <td valign="top"><img src="static/images/output.png"></td>
+  </tr>
+ </table>
