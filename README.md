@@ -82,4 +82,4 @@ ___
 
 Displaying the food insecurity rate change from 2018 to 2020 as a function of distance to the nearest food bank in miles in United States counties. Our scalar variable is distance and our explanatory variable is food insecurity. If a food bank exists in a county, the distance would be 0.
 
-![Linear Regression Model](static/images/linear_regression.png)
+![Linear Regression Model](Images/linear_regression.png)
