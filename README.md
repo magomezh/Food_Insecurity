@@ -20,15 +20,15 @@ The project sought to understand how well distributed Food Bank networks were in
 ​
 
 The focus or aim of the project was to answer the question: 
-On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?
+***On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?***
 
 ## Tools Used
 ---
-Machine Learning: Scikit-Learn
+**Machine Learning**:  Scikit-Learn
 
-Visualizations: Tableau, Matlplotlib, Seaborn, Statsmodels
+**Visualizations**:  Tableau, Matlplotlib, Seaborn, Statsmodels
 
-Web:  HTML, CSS, Flask, JavaScript, Heroku
+**Web**:  HTML, CSS, Flask, JavaScript, Heroku
 
 ## Data Sources
 ---
