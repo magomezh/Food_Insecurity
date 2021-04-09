@@ -99,17 +99,25 @@ We decided to use Linear Probability models to interpret the county demographic 
   </tr>
  </table>
 
-
-We then modeled the probability of having a food bank with our variables for education: looking at the percentage of adults with less than a high school diploma, percentage of adults with a high school diploma only, percentage of adults with an associate's or college degree, and percentage of adults with a bachelor's degree or higher.  
-
 <table>
   <tr>
-    <td>Percentage of Adults with Less than a HS Diploma</td>
-    <td>Percentage of Adults with with a HS Diploma</td>
+    <td>Percentage of adults with less than a HS diploma</td>
+    <td>Percentage of adults with a HS diploma</td>
   </tr>
   <tr>
     <td valign="top"><img src="Images/linear_probability_less_than_hs.png"></td>
     <td valign="top"><img src="Images/linear_probability_hs_only.png"></td>
+  </tr>
+ </table>
+
+ <table>
+  <tr>
+    <td>Percentage of adults completing some college or associates degree.</td>
+    <td>Percentage of adults with a Bachelors degree or higher</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="Images/linear_probability_associates.png"></td>
+    <td valign="top"><img src="Images/linear_probability_bachelors.png"></td>
   </tr>
  </table>
 
