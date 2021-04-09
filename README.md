@@ -60,8 +60,7 @@ ___
 
 The visualizations contain large bubbles that show counties with foodbanks within a 100 mile radius, while the smaller bubbles do not have foodbanks within a 100 mile radius. 
 
-The range of color of the bubbles symbolizes the variables (Food Insecurity, Poverty Rate, Unemployment Rate) 
-
+The range in color of the bubbles symbolizes the variable rate (Food Insecurity, Poverty Rate, Unemployment Rate).
 
 <table>
   <tr>
@@ -75,3 +74,12 @@ The range of color of the bubbles symbolizes the variables (Food Insecurity, Pov
     <td valign="top"><img src="Images/Unemployment_Rate.png"></td>
   </tr>
  </table>
+
+ ## Analysis
+___
+
+ > ### Linear Regression Model 
+
+Displaying the food insecurity rate change from 2018 to 2020 as a function of distance to the nearest food bank in miles in United States counties. Our scalar variable is distance and our explanatory variable is food insecurity. If a food bank exists in a county, the distance would be 0.
+
+![Linear Regression Model](static/images/linear_regression.png)
