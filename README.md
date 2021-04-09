@@ -98,3 +98,19 @@ We decided to use Linear Probability models to interpret the county demographic 
     <td valign="top"><img src="Images/linear_probability_umemployment.png"></td>
   </tr>
  </table>
+
+
+We then modeled the probability of having a food bank with our variables for education: looking at the percentage of adults with less than a high school diploma, percentage of adults with a high school diploma only, percentage of adults with an associate's or college degree, and percentage of adults with a bachelor's degree or higher.  
+
+<table>
+  <tr>
+    <td>Percentage of Adults with Less than a HS Diploma</td>
+    <td>Percentage of Adults with with a HS Diploma</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="Images/linear_probability_less_than_hs.png"></td>
+    <td valign="top"><img src="Images/linear_probability_hs_only.png"></td>
+  </tr>
+ </table>
+
+ The downward slope of the line shows there is a negative correlation for three of the education categories, but the coefficients are so low that there is not a strong correlation. The interesting point here is that counties with a higher percentage of people with bachelor's degree or higher have a higher probability of having a food bank within the county or nearby.
