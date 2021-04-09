@@ -121,7 +121,7 @@ We decided to use Linear Probability models to interpret the county demographic 
   </tr>
  </table>
 
- The downward slope of the line shows there is a negative correlation for three of the education categories, but the coefficients are so low that there is not a strong correlation. The interesting point here is that counties with a higher percentage of people with bachelor's degree or higher have a higher probability of having a food bank within the county or nearby.
+Counties with a higher percentage of people with bachelor's degree or higher have a higher probability of having a food bank within the county or nearby.
 
   > ### Interaction Model
 
@@ -137,3 +137,12 @@ After looking at the linear probability models, we decided to add another variab
     <td valign="top"><img src="Images/output.png"></td>
   </tr>
  </table>
+
+## Findings
+___
+
+> ### Our results indicate that while college education is a significant factor in predicting food insecurity, the distance to the nearest food bank in counties without food banks is not a significant predictor of food insecurity.
+
+> ### Distance to Food Banks is not a predictor of Food Insecurity on the County level. 
+
+
