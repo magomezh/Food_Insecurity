@@ -1,4 +1,4 @@
-> # **On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?**
+# **Is Distance to Food Banks a Predictor of Food Insecurity?**
 
 ![Food Insecurity](Images/C2C_Food_Insecurity.png)
 
@@ -18,10 +18,10 @@ ___
 
 The project sought to understand how well distributed Food Bank networks were in the US. 
 ​
-
 The focus or aim of the project was to answer the question:
 
 ***On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecurity?***
+
 
 ## Tools Used
 ---
@@ -30,6 +30,7 @@ The focus or aim of the project was to answer the question:
 **Visualizations**:  Tableau, Matlplotlib, Seaborn, Statsmodels
 
 **Web**:  HTML, CSS, Flask, JavaScript, Heroku
+
 
 ## Data Sources
 ---
@@ -42,10 +43,11 @@ The focus or aim of the project was to answer the question:
 | [County Demographics](https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/)  | 2019  | U.S. Department of Agriculture – Economic Research Service (USDA)  | December 12, 2020 | 
 | [County Distance Dataset (100 miles)](https://www.nber.org/research/data/county-distance-database) | 2010  | National Bureau of Economic Research (NBER)  | January 18, 2021 | 
 
-## Findings
+
+## Visualizations
 ___
 
-> ### Boston Heatmap
+> ## Boston Heatmap
 
 <table>
   <tr>
@@ -56,7 +58,7 @@ ___
   </tr>
  </table>
 
- > ### Food Insecurity in the USA - Interactive Visualization
+ > ## Food Insecurity in the USA - Interactive Visualization
 
 The visualizations contain large bubbles that show counties with foodbanks within a 100 mile radius, while the smaller bubbles do not have foodbanks within a 100 mile radius. 
 
@@ -74,6 +76,7 @@ The range in color of the bubbles symbolizes the variable rate (Food Insecurity,
     <td valign="top"><img src="Images/Unemployment_Rate.png"></td>
   </tr>
  </table>
+
 
  ## Analysis
 ___
@@ -137,6 +140,7 @@ After looking at the linear probability models, we decided to add another variab
     <td valign="top"><img src="Images/output.png"></td>
   </tr>
  </table>
+
 
 ## Findings
 ___
