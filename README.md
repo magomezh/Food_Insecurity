@@ -60,18 +60,18 @@ ___
 
 The visualizations contain large bubbles that show counties with foodbanks within a 100 mile radius, while the smaller bubbles do not have foodbanks within a 100 mile radius. 
 
-The range of color of the bubbles symbolizes the variables (Food Insecurity, Poverty Rate, Education Rate) 
+The range of color of the bubbles symbolizes the variables (Food Insecurity, Poverty Rate, Unemployment Rate) 
 
 
 <table>
   <tr>
     <td>Food Insecurity</td>
     <td>Poverty Rate</td>
-    <td>Education Level</td>
+    <td>Unemployment Rate</td>
   </tr>
   <tr>
-    <td valign="top"><img src="Images/Food_Insecurity.png"></td>
-    <td valign="top"><img src="Images/product_lift.png"></td>
-    <td valign="top"><img src="Images/product_confidence.png"></td>
+    <td valign="top"><img src="Images/FoodBank_Food_Insecurity.png"></td>
+    <td valign="top"><img src="Images/Poverty_Rate.png"></td>
+    <td valign="top"><img src="Images/Unemployment_Rate.png"></td>
   </tr>
  </table>
