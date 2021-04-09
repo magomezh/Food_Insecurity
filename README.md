@@ -134,6 +134,6 @@ After looking at the linear probability models, we decided to add another variab
   </tr>
   <tr>
     <td valign="top"><img src="Images/linear_regression_more_less_college.png"></td>
-    <td valign="top"><img src="static/images/output.png"></td>
+    <td valign="top"><img src="Images/output.png"></td>
   </tr>
  </table>
