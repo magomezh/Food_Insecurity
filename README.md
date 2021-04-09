@@ -78,13 +78,13 @@ The range in color of the bubbles symbolizes the variable rate (Food Insecurity,
  ## Analysis
 ___
 
- > ### Linear Regression Model 
+ > ## Linear Regression Model 
 
 Displaying the food insecurity rate change from 2018 to 2020 as a function of distance to the nearest food bank in miles in United States counties. Our scalar variable is distance and our explanatory variable is food insecurity. If a food bank exists in a county, the distance would be 0.
 
 ![Linear Regression Model](Images/linear_regression.png)
 
- > ### Linear Probability Models
+ > ## Linear Probability Models
 
 We decided to use Linear Probability models to interpret the county demographic data: poverty rate, unemployment rate, and education. How does the demographics of a county affect the probability that a county contains a food bank?
 
@@ -123,7 +123,7 @@ We decided to use Linear Probability models to interpret the county demographic 
 
 Counties with a higher percentage of people with bachelor's degree or higher have a higher probability of having a food bank within the county or nearby.
 
-  > ### Interaction Model
+  > ## Interaction Model
 
 After looking at the linear probability models, we decided to add another variable to our linear regression model -- education. We took the median of the percentage of people with a bachelor's degree or higher and then assigned a binary variable to all the counties, higher than the medium percentage of people with a bachelor's degree or higher and lower than the medium percentage of people with a bachelor's degree or higher.
 
