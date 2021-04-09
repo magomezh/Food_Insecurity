@@ -24,7 +24,11 @@ On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecur
 
 ## Tools Used
 ---
+Machine Learning: Scikit-Learn
 
+Visualizations: Tableau, Matlplotlib, Seaborn, Statsmodels
+
+Web:  HTML, CSS, Flask, JavaScript, Heroku
 
 ## Data Sources
 ---
@@ -35,4 +39,4 @@ On the U.S. County Level, is Distance to Food Banks a Predictor for Food Insecur
 | [FIPS Codes Dataset](https://www2.census.gov/geo/docs/reference/codes/files/national_county.txt)  | 2010  | Data.world retrieved from the U.S. Government Census (2010). | January 20, 2021 | 
 | [Food Bank Locations](https://www.feedingamerica.org/find-your-local-foodbank) | Current  | Feeding America Organization | January 19, 2021 | 
 | [County Demographics](https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/)  | 2019  | U.S. Department of Agriculture – Economic Research Service (USDA)  | December 12, 2020 | 
-| [County Distance Dataset (100 miles)](https://www.nber.org/research/data/county-distance-database) | 2010  | National Bureau of Economic Research (NBER)  | January 18, 2020 | 
+| [County Distance Dataset (100 miles)](https://www.nber.org/research/data/county-distance-database) | 2010  | National Bureau of Economic Research (NBER)  | January 18, 2021 | 
