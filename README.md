@@ -25,7 +25,7 @@ The focus or aim of the project was to answer the question:
 
 ## Tools Used
 ---
-**Machine Learning**:  Scikit-Learn
+**Machine Learning**:  Scikit-Learn, Python
 
 **Visualizations**:  Tableau, Matlplotlib, Seaborn, Statsmodels
 
